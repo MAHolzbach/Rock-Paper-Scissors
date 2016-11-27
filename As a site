@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Rock, Paper, Scissors</title>
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+<style>
+body {
+  background: white;
+}
+h1 {
+  font-size: 35px;
+  text-align: center;
+  font-family: "Bungee";
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Bungee";
+}
+.Rock {
+  background-image: url("http://i.imgur.com/ojdnGAT.png");
+  height: auto;
+  background-position: center;
+  font-family: "Bungee";
+  font-size: 15px;
+  text-align: left;
+}
+.Paper {
+  background-image: url("http://i.imgur.com/49e1Twa.jpg");
+  font-family: "Bungee";
+  font-size: 15px;
+  text-align: center;
+}
+.Scissors {
+  background-image: url("http://i.imgur.com/yDWj6lJ.jpg");
+  font-family: "Bungee";
+  font-size: 15px;
+  text-align: right;
+}
+</style>
+</head>
+
+<body>
+<h1>Rock, Paper, Scissors</h1>
+<h2>The Game of Kings</h2>
+<div class="Rock">
+  <p>Rock</p>
+</div>
+<div class="Paper">
+  <p>Paper</p>
+</div>
+<div class="Scissors">
+  <p>Scissors</p>
+</div>
+
+  <script>
+    var compChoice = (Math.floor(Math.random() * 3) + 1);
+
+    switch (compChoice) {
+      case 1:
+      document.write("The computer chose rock!")
+      break;
+
+      case 2:
+      document.write("The computer chose paper!")
+      break;
+
+      case 3:
+      document.write("The computer chose scissors!")
+      break;
+    }
+
+    </script>
+  </body>
+</html>
