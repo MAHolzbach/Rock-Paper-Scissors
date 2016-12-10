@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Rock, Paper, Scissors</title>
+
+<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+<script src="https://use.fontawesome.com/27347743ea.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<style>
+body {
+  background: white;
+}
+h1 {
+  font-size: 35px;
+  text-align: center;
+  font-family: "Bungee";
+}
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Bungee";
+}
+button:hover {
+  border: solid;
+  border-color: red;
+  color: red;
+}
+#rock {
+  background-image: url("http://i.imgur.com/yDWj6lJ.jpg");
+  height:270px;
+  width:270px;
+  font-family: "Bungee";
+  font-size: 15px;
+  text-align: left;
+}
+#paper {
+  background-image: url("http://i.imgur.com/49e1Twa.jpg");
+  height:270px;
+  width:270px;
+  font-family: "Bungee";
+  font-size: 15px;
+  text-align: left;
+}
+#scissors {
+  background-image: url("http://i.imgur.com/ojdnGAT.png");
+  height:270px;
+  width:270px;
+  font-family: "Bungee";
+  font-size: 15px;
+  text-align: left;
+}
+</style>
+</head>
+
+<body>
+<h1>Rock, Paper, Scissors</h1>
+<i class="fa fa-hand-scissors-o fa-5x" aria-hidden="true"></i>
+<i class="fa fa-hand-paper-o fa-5x" aria-hidden="true"></i>
+<i class="fa fa-hand-rock-o fa-5x" aria-hidden="true"></i>
+<button id="rock"> Rock </button>
+<button id="paper"> Paper </button>
+<button id="scissors"> Scissors </button>
+
+  <script>
+    $("#rock").click(function() {
+    var compChoice = (Math.floor(Math.random() * 3) + 1);
+
+    switch (compChoice) {
+      case 1:
+      document.write("The computer chose rock!")
+      break;
+
+      case 2:
+      document.write("The computer chose paper!")
+      break;
+
+      case 3:
+      document.write("The computer chose scissors!")
+      break;
+    }
+  });
+    $("#paper").click(function() {
+    var compChoice = (Math.floor(Math.random() * 3) + 1);
+
+    switch (compChoice) {
+      case 1:
+      document.write("The computer chose rock!")
+      break;
+
+      case 2:
+      document.write("The computer chose paper!")
+      break;
+
+      case 3:
+      document.write("The computer chose scissors!")
+      break;
+    }
+  });
+    $("#scissors").click(function() {
+    var compChoice = (Math.floor(Math.random() * 3) + 1);
+
+    switch (compChoice) {
+      case 1:
+      document.write("The computer chose rock!")
+      break;
+
+      case 2:
+      document.write("The computer chose paper!")
+      break;
+
+      case 3:
+      document.write("The computer chose scissors!")
+      break;
+    }
+    });
+
+    </script>
+  </body>
+</html>
