@@ -28,27 +28,38 @@ button:hover {
 }
 #rock {
   background-image: url("http://i.imgur.com/yDWj6lJ.jpg");
-  height:270px;
+  height:300px;
   width:270px;
+  position: relative;
+  left: 450px;
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
 }
 #paper {
   background-image: url("http://i.imgur.com/49e1Twa.jpg");
-  height:270px;
+  height:300px;
   width:270px;
+  position: relative;
+  left: 450px;
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
 }
 #scissors {
   background-image: url("http://i.imgur.com/ojdnGAT.png");
-  height:270px;
+  height:300px;
   width:270px;
+  position: relative;
+  left: 450px;
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
+}
+#compMove {
+  font-family: "Bungee";
+  font-size: 20px;
+  text-align: center;
 }
 </style>
 </head>
