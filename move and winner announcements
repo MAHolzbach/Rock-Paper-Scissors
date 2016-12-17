@@ -89,67 +89,67 @@ button:hover {
     var playerChoice;
 
     $("#rock").click(function() {
-    document.getElementById("playerMove").innerHTML = ("You chose rock!")
+    document.getElementById("playerMove").innerHTML = ("You chose rock.")
 
     var compChoice = (Math.floor(Math.random() * 3) + 1);
 
     switch (compChoice) {
       case 1:
-      document.getElementById("compMove").innerHTML = ("The computer chose rock!")
+      document.getElementById("compMove").innerHTML = ("The computer chose rock.")
       document.getElementById("result").innerHTML = ("It's a draw!")
       break;
 
       case 2:
-      document.getElementById("compMove").innerHTML = ("The computer chose paper!")
+      document.getElementById("compMove").innerHTML = ("The computer chose paper.")
       document.getElementById("result").innerHTML = ("The computer wins!")
       break;
 
       case 3:
-      document.getElementById("compMove").innerHTML = ("The computer chose scissors!")
+      document.getElementById("compMove").innerHTML = ("The computer chose scissors.")
       document.getElementById("result").innerHTML = ("You win!")
       break;
     }
   });
     $("#paper").click(function() {
-    document.getElementById("playerMove").innerHTML = ("You chose paper!")
+    document.getElementById("playerMove").innerHTML = ("You chose paper.")
 
     var compChoice = (Math.floor(Math.random() * 3) + 1);
 
     switch (compChoice) {
       case 1:
-      document.getElementById("compMove").innerHTML = ("The computer chose rock!")
+      document.getElementById("compMove").innerHTML = ("The computer chose rock.")
       document.getElementById("result").innerHTML = ("You win!")
       break;
 
       case 2:
-      document.getElementById("compMove").innerHTML = ("The computer chose paper!")
+      document.getElementById("compMove").innerHTML = ("The computer chose paper.")
       document.getElementById("result").innerHTML = ("It's a draw!")
       break;
 
       case 3:
-      document.getElementById("compMove").innerHTML = ("The computer chose scissors!")
+      document.getElementById("compMove").innerHTML = ("The computer chose scissors.")
       document.getElementById("result").innerHTML = ("The computer wins!")
       break;
     }
   });
     $("#scissors").click(function() {
-    document.getElementById("playerMove").innerHTML = ("You chose scissors!")
+    document.getElementById("playerMove").innerHTML = ("You chose scissors.")
 
     var compChoice = (Math.floor(Math.random() * 3) + 1);
 
     switch (compChoice) {
       case 1:
-      document.getElementById("compMove").innerHTML = ("The computer chose rock!")
+      document.getElementById("compMove").innerHTML = ("The computer chose rock.")
       document.getElementById("result").innerHTML = ("The computer wins!")
       break;
 
       case 2:
-      document.getElementById("compMove").innerHTML = ("The computer chose paper!")
+      document.getElementById("compMove").innerHTML = ("The computer chose paper.")
       document.getElementById("result").innerHTML = ("You win!")
       break;
 
       case 3:
-      document.getElementById("compMove").innerHTML = ("The computer chose scissors!")
+      document.getElementById("compMove").innerHTML = ("The computer chose scissors.")
       document.getElementById("result").innerHTML = ("It's a draw!")
       break;
     }
