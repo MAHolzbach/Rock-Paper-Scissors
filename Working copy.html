@@ -22,17 +22,22 @@ h2 {
   text-align: center;
   font-family: "Bungee";
 }
+.buttons {
+  max-width: 818px;
+  margin: 0 auto;
+  border: solid black 10px;
+}
 button:hover {
-  border: solid;
-  border-color: red;
+  border: solid red 5px;
   color: red;
 }
+
 #rock {
   background-image: url("http://i.imgur.com/yDWj6lJ.jpg");
   height:300px;
   width:270px;
-  position: relative;
-  left: 450px;
+  /*position: relative;
+  left: 450px;*/
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
@@ -41,8 +46,8 @@ button:hover {
   background-image: url("http://i.imgur.com/49e1Twa.jpg");
   height:300px;
   width:270px;
-  position: relative;
-  left: 450px;
+  /*position: relative;
+  left: 450px;*/
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
@@ -51,8 +56,8 @@ button:hover {
   background-image: url("http://i.imgur.com/ojdnGAT.png");
   height:300px;
   width:270px;
-  position: relative;
-  left: 450px;
+  /*position: relative;
+  left: 450px;*/
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
@@ -82,15 +87,21 @@ button:hover {
 <div id="compMove"></div>
 <div id="result"></div>
 
-<button id="rock"> Rock </button>
-<button id="paper"> Paper </button>
-<button id="scissors"> Scissors </button>
+<div class="buttons">
+  <button id="rock" onclick="playRockSound()"> Rock </button>
+  <button id="paper" onclick="playPaperSound()"> Paper </button>
+  <button id="scissors" onclick="playScissorsSound()"> Scissors </button>
+</div>
 
   <script>
     var playerChoice;
 
     $("#rock").click(function() {
     document.getElementById("playerMove").innerHTML = ("You chose rock.")
+
+    /*function playRockSound() {
+      var rockSound =
+    }*/
 
     var compChoice = (Math.floor(Math.random() * 3) + 1);
 
