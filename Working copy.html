@@ -88,18 +88,14 @@ button:hover {
   <h1>Rock, Paper, Scissors</h1>
 </div>
 
-<audio id="stoneSound" preload="auto">
-    <source src="https://freesound.org/people/mbezzola/sounds/105287/"></source>
-</audio>
-
 <div id="playerMove"></div>
 <div id="compMove"></div>
 <div id="result"></div>
 
 <div class="buttons">
-  <button id="rock" onclick="playRockSound()"> Rock </button>
-  <button id="paper" onclick="playPaperSound()"> Paper </button>
-  <button id="scissors" onclick="playScissorsSound()"> Scissors </button>
+  <button id="rock"> Rock </button>
+  <button id="paper"> Paper </button>
+  <button id="scissors"> Scissors </button>
 </div>
 
   <script>
@@ -111,10 +107,6 @@ button:hover {
 
     $("#rock").click(function() {
     document.getElementById("playerMove").innerHTML = ("You chose rock.")
-
-    /*function playRockSound() {
-      var rockSound =
-    }*/
 
     var compChoice = (Math.floor(Math.random() * 3) + 1);
 
