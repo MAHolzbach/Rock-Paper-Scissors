@@ -14,13 +14,16 @@
 body {
   background: #90C9C0;
 }
-#paperTitle {
-  animation: fadeIn 2s;
-}
 #rockTitle {
-  animation-name: moveRight;
   animation-duration: 2s;
-  animation-iteration-count: 1;
+  animation-name: moveright;
+}
+#paperTitle {
+  animation: fadein 2s;
+}
+#scissorsTitle {
+  animation-duration: 2s;
+  animation-name: moveleft;
 }
 h1 {
   font-size: 35px;
@@ -46,8 +49,6 @@ button:hover {
   background-image: url("http://i.imgur.com/yDWj6lJ.jpg");
   height:300px;
   width:270px;
-  /*position: relative;
-  left: 450px;*/
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
@@ -56,8 +57,6 @@ button:hover {
   background-image: url("http://i.imgur.com/49e1Twa.jpg");
   height:300px;
   width:270px;
-  /*position: relative;
-  left: 450px;*/
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
@@ -66,8 +65,6 @@ button:hover {
   background-image: url("http://i.imgur.com/ojdnGAT.png");
   height:300px;
   width:270px;
-  /*position: relative;
-  left: 450px;*/
   font-family: "Bungee";
   font-size: 15px;
   text-align: left;
@@ -87,16 +84,28 @@ button:hover {
   font-size: 30px;
   text-align: center;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes moveRight {
+@keyframes fadein {
   from {
-    transform: translateX(0);
+    opacity: 0;
   }
   to {
-    transform: translateX(100px);
+    opacity: 1;
+  }
+}
+@keyframes moveright {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes moveleft {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
   }
 }
 </style>
@@ -105,12 +114,16 @@ button:hover {
 <body>
 
 <div class="jumbotron text-center">
-  <h1><span id="rockTitle">Rock</span> <span id="paperTitle">Paper</span> <span id="scissorsTitle">Scissors</span></h1>
+  <h1>
+    <div id="rockTitle">Rock</div>
+    <div id="paperTitle">Paper</div>
+    <div id="scissorsTitle">Scissors</div>
+  </h1>
 </div>
 
-<div id="playerMove"></div>
-<div id="compMove"></div>
-<div id="result"></div>
+<div id="playerMove"></br></div>
+<div id="compMove"></br></div>
+<div id="result"></br></div>
 
 <div class="buttons">
   <button id="rock"> Rock </button>
