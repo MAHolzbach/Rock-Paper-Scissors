@@ -9,22 +9,24 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 <style>
 
 body {
   background: #90C9C0;
 }
 #rockTitle {
-  animation-duration: 2s;
-  animation-name: moveright;
+  animation-name: bounceInLeft;
+  animation-duration: 1s;
 }
-#paperTitle {
+/*#paperTitle {
   animation: fadein 2s;
 }
 #scissorsTitle {
   animation-duration: 2s;
   animation-name: moveleft;
-}
+}*/
 h1 {
   font-size: 35px;
   text-align: center;
@@ -84,7 +86,7 @@ button:hover {
   font-size: 30px;
   text-align: center;
 }
-@keyframes fadein {
+/*@keyframes fadein {
   from {
     opacity: 0;
   }
@@ -107,7 +109,7 @@ button:hover {
   to {
     margin-right: 0%;
   }
-}
+}*/
 </style>
 </head>
 
@@ -116,8 +118,8 @@ button:hover {
 <div class="jumbotron text-center">
   <h1>
     <div id="rockTitle">Rock</div>
-    <div id="paperTitle">Paper</div>
-    <div id="scissorsTitle">Scissors</div>
+    <div class="animated bounceInDown"id="paperTitle">Paper</div>
+    <div class="animated bounceInRight"id="scissorsTitle">Scissors</div>
   </h1>
 </div>
 
